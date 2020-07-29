@@ -65,7 +65,7 @@ export class PostService{
       return this.http.delete('https://httprequestproject.firebaseio.com/posts.json',
       {
         observe:'events',
-        responseType:'blob'
+        responseType:'json'
       }).pipe(tap(
         event=>{
           console.log(event);
