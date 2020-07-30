@@ -44,7 +44,7 @@ export class PostService{
               const arrayPost:myPost[]=[];
               for(const key in responseData){
                 if(responseData.hasOwnProperty){
-                  arrayPost.push({...responseData[key],id: key})
+                  arrayPost.push({...responseData[key],id: key}) //...responseData[] is spread operator, it takes a copy of the  array.
                 }
               }
               return arrayPost;
